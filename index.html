@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta name="viewport" content="width=device-width" />
+
+  <!-- Title -->
+  <title>StemSplit</title>
+
+  <!-- Halfmoon CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- Color Customization -->
+  <style>
+    :root {
+      --primary-color: #6e2cf1;
+          }
+  </style>
+</head>
+
+<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-set-preferred-mode-onload="true">
+  <div class="page-wrapper with-navbar">
+    <!-- Navbar start -->
+    <nav class="navbar justify-content-between">
+      <a href="https://StemSplit.biglou.repl.co" class="navbar-brand">
+        StemSplit &nbsp;<i class="fa-solid fa-arrows-split-up-and-left fa-flip-horizontal"></i>
+      </a>
+      <div class="navbar-content">
+        <button class="btn btn-square" type="button" onclick="halfmoon.toggleDarkMode()">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+          <span class="sr-only">Toggle dark mode</span>
+        </button>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Content wrapper start -->
+    <div class="content-wrapper">
+      <div class="container-fluid">
+        <div class="content text-smoothing-auto">
+          <h1 class="content-title font-size-22">Split any audio into 6 stems using machine learning</h1>
+          Web demo for Demucs v4: Music Source Separation in the Waveform Domain. To use it, simply upload your audio file. Read more at the links below.
+        </div>
+        
+        <!-- Main card -->
+        <div class="card border mw-full">
+          <h2 class="card-title text-smoothing-auto">
+            Try it below!
+          </h2>
+          <!-- File input -->
+          <div class="custom-file">
+            <input type="file" id="file-input-1" accept="audio/*">
+            <label for="file-input-1">Choose a file</label>
+          </div>
+          
+          <hr class="text-smoothing-auto">model used: demucs_6s</hr>
+        </div>
+    </div>
+    <!-- Content wrapper end -->
+
+  </div>
+  <!-- Page wrapper end -->
+
+  <!-- Halfmoon JS -->
+  <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+</body>
+</html>
